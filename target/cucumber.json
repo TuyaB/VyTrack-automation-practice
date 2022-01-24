@@ -1,0 +1,96 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-07T16:49:45.570Z",
+        "line": 5,
+        "name": "Verify Vehicle Odometer",
+        "description": "",
+        "id": "vehicle-odometer-feature;verify-vehicle-odometer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5937000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on the login page",
+            "match": {
+              "location": "com.vytrack.stepdefinitions.LoginStepDefs.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3515000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User logins with username \"user16\" and password \"UserUser123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user16\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"UserUser123\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.vytrack.stepdefinitions.LoginAsTruckDriver.user_logins_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 245000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on Vehicle Odometer",
+            "match": {
+              "location": "com.vytrack.stepdefinitions.VehicleOdometerStepDefs.userClicksOnVehicleOdometer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1983000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should see all vehicle odometer information on the grid",
+            "match": {
+              "location": "com.vytrack.stepdefinitions.VehicleOdometerStepDefs.user_should_see_all_vehicle_odometer_information_on_the_grid()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Vehicle Odometer Feature",
+    "description": "",
+    "id": "vehicle-odometer-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/VehicleOdometer.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
